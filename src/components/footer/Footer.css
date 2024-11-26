@@ -1,0 +1,83 @@
+
+.container {
+    background-color: #3e6807;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.row-wrap {
+    margin-top: -350px !important;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+}
+.item-footer {
+    flex: 1;
+    max-width: 25%;
+    min-width: 250px;
+    color: #fff;
+}
+.item-footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #ffffff;
+    align-items: flex-start ;
+}
+.item-footer span {
+    display: block;
+    font-size: 14px;
+    color: #f1f1f1;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.item-footer div {
+    display: flex;
+    align-items: center;
+}
+.store{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: #f1f4da;
+    border-radius: 5px;
+    padding: 12px;
+}
+.iconStore {
+    background-color: orange;
+}
+.storeText{
+    color: #0b4705;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+/*.custom-row {*/
+/*    max-width: 100%;*/
+/*    display: flex; !* Flexbox để hỗ trợ bố cục *!*/
+/*    flex-direction: column !important;*/
+/*    justify-content: space-between;*/
+/*}*/
+.item-footer2 {
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+
+
+/* Responsive để tối ưu cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .row-wrap {
+        flex-direction: column;
+        gap: 20px; /* Khoảng cách giữa các Col */
+    }
+
+    .item-footer {
+        max-width: 100%; /* Mở rộng chiều rộng Col */
+    }
+}
