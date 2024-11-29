@@ -1,13 +1,14 @@
-
-.container {
+.footer{
     background-color: #3e6807;
+}
+.container_footer {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    max-width: 1400px;
+    min-height: 500px;
 }
 .row-wrap {
-    margin-top: -350px !important;
-    width: 100%;
     max-width: 1200px;
     padding: 20px 10px;
     display: flex;
@@ -17,7 +18,7 @@
 }
 .item-footer {
     flex: 1;
-    max-width: 25%;
+    max-width: 350px;
     min-width: 250px;
     color: #fff;
 }
@@ -57,16 +58,74 @@
     margin-left: 12px;
 }
 
-/*.custom-row {*/
-/*    max-width: 100%;*/
-/*    display: flex; !* Flexbox để hỗ trợ bố cục *!*/
-/*    flex-direction: column !important;*/
-/*    justify-content: space-between;*/
-/*}*/
-.item-footer2 {
+.footer-wrap-last{
     width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+.item-register{
+    position: relative;
+    background-color: #8ab14b;
+    border: 2px solid #8ab14b;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    max-width: 100%;
+    padding: 10px 18px;
+    width: 400px;
+    display: flex;
+}
+.input_register{
+    width: 80% !important;
+    height: 36px;
+    position: absolute !important;
+    border-radius: 0  2px 5px 0 !important;
+    top: 0;
+    left: 0;
+    padding: 10px 18px;
+    background-color: transparent;
+    border: none !important;/* Nếu muốn bỏ luôn viền */
+    box-shadow: none; /* Loại bỏ hiệu ứng shadow */
+
+
+}
+.btn_register{
+    width: 28% !important;
+    height: 36px !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    margin-left: 2px;
+    background: orange !important;
+    border: 2px solid #8ab14b;
+    border-radius: 0 5px 5px 0 !important;
+    color: #345;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    min-width: 110px;
+    padding: 0 13px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.item-footer2 {
     display: flex;
     color: #fff;
+    padding: 16px;
+    margin-left: 28px;
+    width: 15%;
+
+}
+.item-footer3{
+    display: flex;
+    width: 30%;
+    margin-right: 20px;
+}
+.footer-wrap-copyRight{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 16px;
 }
 
 

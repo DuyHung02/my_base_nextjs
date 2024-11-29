@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
   return(
     <footer className="footer">
-     <div className="container">
+     <div className="container container_footer">
        <Row
          justify="space-between"
          className="row-wrap"
@@ -48,32 +48,25 @@ const Footer = () => {
            </div>
          </Col>
        </Row>
-       <Row className="custom-row">
-         <Col xs={24} sm={24} md={8} lg={10} xl={16}>
-           <div className="item-footer2">
-             <Input placeholder={'Đăng ký email để nhận ưu đãi *'} />
-             <Button type="primary" htmlType="submit" size="large">
-               Đăng ký
-             </Button>
-           </div>
-         </Col>
-
-         <Col xs={24} sm={24} md={8} lg={10} xl={16}>
-           <div className="item-footer2">
-             <Image
-               src={`/image/logo.jpg`}
-               alt="logo_footer"
-               width={166}
-             />
-           </div>
-         </Col>
-         <Col xs={24} sm={24} md={8} lg={10} xl={16}>
-           <div className="item-footer2">
-             MỸ PHẨM THIÊN NHIÊN
-             LÀNH VÀ THẬT
-           </div>
-         </Col>
-         <Col xs={24} sm={24} md={16} lg={14} xl={8}>
+       <Flex  className="footer-wrap-last">
+         <div className="item-register">
+           <Input placeholder={'Đăng ký email để nhận ưu đãi *'} className="input_register" />
+           <Button type="primary" htmlType="submit" size="large" className="btn_register">
+             Đăng ký
+           </Button>
+         </div>
+         <div className="item-footer2">
+           <Image
+             src={`/image/logo.jpg`}
+             alt="logo_footer"
+             width={166}
+           />
+         </div>
+         <div className="item-footer2" style={{textAlign:"center"}}>
+           MỸ PHẨM THIÊN NHIÊN
+           LÀNH VÀ THẬT
+         </div>
+         <Flex>
            <div className="item-footer2">
              <a
                className="contact-ele"
@@ -108,14 +101,52 @@ const Footer = () => {
                <Image
                  src={`/image/youtube.jpg`}
                  alt="logo_youtube"
-                 width={60}
+                 width={58}
                />
              </a>
            </div>
-         </Col>
-       </Row>
+         </Flex>
+       </Flex>
+       <Flex className="footer-wrap-copyRight">
+         <div className="item-footer3" style={{lineHeight:"30px"}} >
+           Công ty Cổ phần Mỹ phẩm Thiên nhiên Cỏ Mềm
+           GPĐKKD số 0109153702 do Sở KHĐT Tp.Hà Nội cấp 09/04/2020
+           Sản xuất tại Nhà máy Mỹ phẩm Thiên Nhiên Song An
+           225 Trần Đăng Ninh, p. Dịch Vọng, q. Cầu Giấy, Hà Nội
+         </div>
+         <div className="item-footer3" style={{textAlign:"center"}}>
+           *Lưu ý: Tác dụng của sản phẩm có thể thay đổi tùy theo tình trạng thể chất mỗi người
+         </div>
+         <div className="item-footer3">
+           <a
+             className="contact-ele"
+             href="https://www.instagram.com/channel/UcaxLMzyajhVv--vckQhJhXQ/"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <Image
+               src={`/image/bocongthuong.jpg`}
+               alt="logo_youtube"
+               width={150}
+             />
+           </a>
+           <a
+             className="contact-ele"
+             href="https://www.instagram.com/channel/UcaxLMzyajhVv--vckQhJhXQ/"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <Image
+               src={`/image/protected.jpg`}
+               alt="logo_youtube"
+               width={150}
+               style={{marginTop:'10px'}}
+             />
+           </a>
+         </div>
+       </Flex>
      </div>
     </footer>
   )
 }
- export default Footer;
+export default Footer;
