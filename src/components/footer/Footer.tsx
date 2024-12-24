@@ -12,14 +12,14 @@ const Footer = () => {
          align="middle"
          gutter={[16, 16]}
        >
-         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+         <Col xs={24} sm={12} md={6} lg={6} xl={6}>
            <div className="item-footer">
              <h5>Về Cỏ Mềm</h5>
              <span>Chuyện của Cỏ</span>
              <span> Về nhà máy</span>
            </div>
          </Col>
-         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+         <Col xs={24} sm={12} md={6} lg={6} xl={6}>
            <div className="item-footer">
              <h5>Hoạt động cộng đồng</h5>
              <span>Trồng rừng</span>
@@ -27,7 +27,7 @@ const Footer = () => {
              <span>Chung tay phòng chống COVID</span>
            </div>
          </Col>
-         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+         <Col xs={24} sm={12} md={6} lg={6} xl={6}>
            <div className="item-footer">
              <h5>Hướng dẫn mua hàng</h5>
              <span>Chính sách mua hàng và thanh toán</span>
@@ -36,7 +36,7 @@ const Footer = () => {
              <span>Chính sách bảo mật thông tin</span>
            </div>
          </Col>
-         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+         <Col xs={24} sm={12} md={6} lg={6} xl={6}>
            <div className="item-footer">
              <h5>Thông tin liên hệ</h5>
              <span>cskh.so@comem.vn</span>

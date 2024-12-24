@@ -36,3 +36,14 @@ export type IResponseLogin = {
   access_token: string;
   user: IUser;
 };
+
+export type IRegister = {
+  username: string;
+  password: string;
+  email: string;
+  phoneNumber: string;
+  address: string;
+}
+ export type IRegisterComponent = {
+  onSubmit: (payload: IRegister) => void;
+ }

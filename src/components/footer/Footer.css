@@ -132,11 +132,23 @@
 /* Responsive để tối ưu cho màn hình nhỏ */
 @media (max-width: 768px) {
     .row-wrap {
+        margin-left: -97px !important;
+        margin-top: -55px !important;
+        justify-content: start !important;
         flex-direction: column;
-        gap: 20px; /* Khoảng cách giữa các Col */
+        gap: 20px;
     }
 
     .item-footer {
-        max-width: 100%; /* Mở rộng chiều rộng Col */
+        max-width: 100%;
     }
+    .footer-wrap-last{
+        width: 100% !important;
+        margin-left: -80px !important;
+        margin-top: -5px !important;
+        justify-content: start !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
